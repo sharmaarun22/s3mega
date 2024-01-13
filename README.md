@@ -26,7 +26,7 @@ This project provides a Python script for automating various tasks with AWS S3, 
 * install requirements using:
 pip install -r requirements
 
-* Set up your AWS credentials and configuration in the config/config.ini file. 
+* Set up your AWS credentials and configuration in the Config/config.ini file. 
 * Place the file to be uploaded in the Data directory. 
 * Run main_script.py from the scripts directory.
 

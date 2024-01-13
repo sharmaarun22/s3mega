@@ -1,7 +1,5 @@
 import boto3
 import time
-import matplotlib.pyplot as plt
-import configparser
 import os
 from utils.readProperties import ReadConfig
 
@@ -65,20 +63,3 @@ class S3Manager:
         except Exception as e:
             print(f"Error deleting file: {e}")
 
-    @staticmethod
-    def plot_performance(upload_time):
-        reports_dir = "../Reports"
-        labels = ['Upload']
-        times = [upload_time]
-
-        plt.bar(labels, times, color=['blue'])
-        plt.xlabel('Operation')
-        plt.ylabel('Time (seconds)')
-        plt.title('S3 File Upload Performance Report')
-
-        # Save the report in the testReports directory
-        report_path = os.path.join(reports_dir, 'upload_performance_report.png')
-        plt.savefig(report_path)
-
-        print(f"Upload performance report saved to '{report_path}'.")
-        plt.show()

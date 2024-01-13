@@ -1,7 +1,7 @@
 import configparser
 
 config = configparser.RawConfigParser()
-config.read("C:\\Users\\Administrator\\PycharmProjects\\mega\\Config\\config.ini")
+config.read("../Config/config.ini")
 
 
 class ReadConfig:

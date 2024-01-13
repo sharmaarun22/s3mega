@@ -1,7 +1,8 @@
 from utils.s3_utilities import S3Manager
+from utils.visualization_utils import Visualizer
+
 
 # Main execution
-
 if __name__ == "__main__":
     s3_manager = S3Manager()
 
@@ -12,4 +13,5 @@ if __name__ == "__main__":
 
     s3_manager.delete_file()
 
-    s3_manager.plot_performance(upload_time)
+    visualizer = Visualizer()
+    visualizer.plot_performance(upload_time)
