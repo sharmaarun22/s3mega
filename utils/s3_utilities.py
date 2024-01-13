@@ -15,7 +15,7 @@ class S3Manager:
         self.bucket_name = ReadConfig.get_s3_bucket_name()
         self.file_name = ReadConfig.get_s3_file_name()
         self.test_data_dir = test_data_dir
-        self.downloads_dir = "../testDownloads"
+        self.downloads_dir = "../Downloads"
         self.s3 = boto3.client('s3', aws_access_key_id=self.aws_access_key_id,
                                aws_secret_access_key=self.aws_secret_access_key, region_name=self.aws_region)
 
@@ -67,7 +67,7 @@ class S3Manager:
 
     @staticmethod
     def plot_performance(upload_time):
-        reports_dir = "../testReports"
+        reports_dir = "../Reports"
         labels = ['Upload']
         times = [upload_time]
 
