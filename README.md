@@ -35,3 +35,14 @@ pip install -r requirements.txt
 * Python 3.x
 * Boto3 library
 * Matplotlib library
+* Selenium library
+* requests library
+
+**Assignment 2 - Verifying Download Links**
+
+**Usage:**
+
+* Download the driver exe for Chrome browser.
+* Mention the driver path while initializing Chrome in verify_download_links.py
+* Run verify_download_links.py file
+
